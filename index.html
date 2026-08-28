@@ -3,73 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dress to Impress - Guia Interativo</title>
+  <title>Dress to Impress — Lookbook & Guia VIP</title>
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <header class="header">
-    <h1 class="sparkle-title">✨ Dress to Impress ✨</h1>
-    <p>O guia de estilo para dominar a passarela do Roblox!</p>
+  <div class="sparkles-bg"></div>
+
+  <header class="hero">
+    <div class="badge">✨ Roblox VIP Guide</div>
+    <h1>Dress to Impress</h1>
+    <p>Domine a passarela com as melhores combinações, truques de layering e paletas glamourosas.</p>
   </header>
 
   <main class="container">
-    <section class="card-info">
-      <h2 class="section-title">💖 Como Funciona o Jogo</h2>
-      <p>Em <strong>Dress to Impress</strong> (Vista-se para Impressionar), você tem tempo limitado para escolher roupas, maquiagem, cabelos e acessórios de acordo com o tema da rodada. Depois, desfile na passarela e receba estrelas dos outros jogadores!</p>
-    </section>
-
-    <section class="card-info">
-      <h2 class="section-title">🌟 Dicas de Estilo Interativas</h2>
-      <p class="subtitle">Clique nos cartões abaixo para revelar os segredos do look perfeito:</p>
-      
-      <div class="grid">
-        <div class="interactive-card" onclick="revelarDica(this)">
-          <h3>👚 Camadas (Layering)</h3>
-          <p class="hidden-text">Sobreponha vestidos com saias, tops e jaquetas para criar peças totalmente novas e detalhadas.</p>
-          <span class="click-prompt">Clique para revelar ✨</span>
+    <section class="section">
+      <h2 class="title-pink">💖 Segredos da Passarela</h2>
+      <div class="cards-grid">
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="card-icon">👗</span>
+              <h3>Layering Pro</h3>
+              <p>Clique para girar ✨</p>
+            </div>
+            <div class="card-back">
+              <p>Misture vestidos curtos com saias plissadas e tops rendados para criar um outfit exclusivo que ninguém mais tem na rodada!</p>
+            </div>
+          </div>
         </div>
 
-        <div class="interactive-card" onclick="revelarDica(this)">
-          <h3>🎨 Paleta de Cores</h3>
-          <p class="hidden-text">Trabalhe com 2 ou 3 cores principais ou crie combinações tom sobre tom para um visual limpo e elegante.</p>
-          <span class="click-prompt">Clique para revelar ✨</span>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="card-icon">🎨</span>
+              <h3>Paleta Glam</h3>
+              <p>Clique para girar ✨</p>
+            </div>
+            <div class="card-back">
+              <p>Use a roda de cores para alinhar a maquiagem com os detalhes do vestido. Monocromático em tons de rosa sempre garante 5 estrelas!</p>
+            </div>
+          </div>
         </div>
 
-        <div class="interactive-card" onclick="revelarDica(this)">
-          <h3>💄 Cabelo e Make</h3>
-          <p class="hidden-text">Combine o tom de maquiagem e a textura do cabelo com a proposta da rodada para ganhar mais pontos nas votações.</p>
-          <span class="click-prompt">Clique para revelar ✨</span>
+        <div class="card" onclick="this.classList.toggle('flipped')">
+          <div class="card-inner">
+            <div class="card-front">
+              <span class="card-icon">👑</span>
+              <h3>Cabelo & Poses</h3>
+              <p>Clique para girar ✨</p>
+            </div>
+            <div class="card-back">
+              <p>Sincronize sua pose na passarela com o ritmo da música e use cabelos volumosos com tom exato do Look.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="card-info">
-      <h2 class="section-title">📸 Inspirações da Passarela</h2>
-      <p class="subtitle">Passe o mouse ou toque nas imagens para ver o efeito de iluminação:</p>
-
-      <div class="gallery">
-        <div class="img-box">
-          <img src="https://via.placeholder.com/280x380/ffb6c1/ffffff?text=Look+Coquette" alt="Look Coquette" class="game-img">
-          <p class="img-label">Tema: Coquette / Vintage</p>
+    <section class="section">
+      <h2 class="title-pink">📸 Galeria de Outfits & Inspirações</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=80" alt="Look Coquette">
+          <div class="overlay"><span>Tema: Coquette Soft</span></div>
         </div>
-        <div class="img-box">
-          <img src="https://via.placeholder.com/280x380/ff69b4/ffffff?text=Look+Gala" alt="Look Gala" class="game-img">
-          <p class="img-label">Tema: Red Carpet / Gala</p>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80" alt="Look Red Carpet">
+          <div class="overlay"><span>Tema: Red Carpet Glam</span></div>
         </div>
-        <div class="img-box">
-          <img src="https://via.placeholder.com/280x380/ff1493/ffffff?text=Look+Cyberpunk" alt="Look Cyberpunk" class="game-img">
-          <p class="img-label">Tema: Cyberpunk / Futurist</p>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&auto=format&fit=crop&q=80" alt="Look Y2K">
+          <div class="overlay"><span>Tema: Y2K Icon</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=80" alt="Look Cyber Fairy">
+          <div class="overlay"><span>Tema: Cyber Fairy</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&auto=format&fit=crop&q=80" alt="Look Pastel Chic">
+          <div class="overlay"><span>Tema: Pastel Chic</span></div>
+        </div>
+        <div class="gallery-item">
+          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=500&auto=format&fit=crop&q=80" alt="Look Royal Gala">
+          <div class="overlay"><span>Tema: Royal Gala</span></div>
         </div>
       </div>
     </section>
   </main>
-
-  <script>
-    function revelarDica(card) {
-      card.classList.toggle('active');
-    }
-  </script>
 
 </body>
 </html>
