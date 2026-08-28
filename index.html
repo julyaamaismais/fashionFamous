@@ -3,95 +3,97 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dress to Impress — Lookbook & Guia VIP</title>
+  <title>Fashion Famous ✨ Roblox Guide</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="sparkles-bg"></div>
-
-  <header class="hero">
-    <div class="badge">✨ Roblox VIP Guide</div>
-    <h1>Dress to Impress</h1>
-    <p>Domine a passarela com as melhores combinações, truques de layering e paletas glamourosas.</p>
+  <header class="header">
+    <div class="logo">✨ Fashion Famous Zone ✨</div>
+    <nav class="nav">
+      <a href="#sobre">Sobre</a>
+      <a href="#dicas">Dicas 5 Estrelas</a>
+      <a href="#temas">Temas Populares</a>
+    </nav>
   </header>
 
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Arrase na Passarela! 👗💖</h1>
+      <p>O guia definitivo de estilo, combinações e truques para vencer todas as rodadas no Fashion Famous do Roblox.</p>
+      <a href="#dicas" class="btn">Ver Dicas Incríveis</a>
+    </div>
+  </section>
+
   <main class="container">
-    <section class="section">
-      <h2 class="title-pink">💖 Segredos da Passarela</h2>
-      <div class="cards-grid">
-        <div class="card" onclick="this.classList.toggle('flipped')">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-icon">👗</span>
-              <h3>Layering Pro</h3>
-              <p>Clique para girar ✨</p>
-            </div>
-            <div class="card-back">
-              <p>Misture vestidos curtos com saias plissadas e tops rendados para criar um outfit exclusivo que ninguém mais tem na rodada!</p>
-            </div>
-          </div>
-        </div>
+    <section id="sobre" class="card">
+      <h2>👑 O que é o Fashion Famous?</h2>
+      <p>Fashion Famous é um dos jogos de moda mais icônicos do Roblox. Você tem poucos minutos para montar o look perfeito de acordo com o tema sorteado, escolher cabelo, maquiagem, acessórios e desfilar na passarela para impressionar os jurados!</p>
+    </section>
 
-        <div class="card" onclick="this.classList.toggle('flipped')">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-icon">🎨</span>
-              <h3>Paleta Glam</h3>
-              <p>Clique para girar ✨</p>
-            </div>
-            <div class="card-back">
-              <p>Use a roda de cores para alinhar a maquiagem com os detalhes do vestido. Monocromático em tons de rosa sempre garante 5 estrelas!</p>
-            </div>
-          </div>
+    <section id="dicas" class="card-grid-section">
+      <h2>⭐ Como Ganhar 5 Estrelas</h2>
+      <div class="grid">
+        <div class="mini-card">
+          <span class="icon">⏰</span>
+          <h3>Gestão de Tempo</h3>
+          <p>Escolha primeiro a roupa base e o cabelo. Deixe os acessórios e o rosto para os últimos 30 segundos!</p>
         </div>
-
-        <div class="card" onclick="this.classList.toggle('flipped')">
-          <div class="card-inner">
-            <div class="card-front">
-              <span class="card-icon">👑</span>
-              <h3>Cabelo & Poses</h3>
-              <p>Clique para girar ✨</p>
-            </div>
-            <div class="card-back">
-              <p>Sincronize sua pose na passarela com o ritmo da música e use cabelos volumosos com tom exato do Look.</p>
-            </div>
-          </div>
+        <div class="mini-card">
+          <span class="icon">🎨</span>
+          <h3>Paleta de Cores</h3>
+          <p>Combine tons que conversam entre si. Usar de 2 a 3 cores harmoniosas faz o look se destacar na luz da passarela.</p>
+        </div>
+        <div class="mini-card">
+          <span class="icon">💄</span>
+          <h3>Rosto & Cabelo</h3>
+          <p>O rosto muda completamente a vibe! Escolha maquiagens marcantes que combinem com a proposta do tema.</p>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <h2 class="title-pink">📸 Galeria de Outfits & Inspirações</h2>
-      <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&auto=format&fit=crop&q=80" alt="Look Coquette">
-          <div class="overlay"><span>Tema: Coquette Soft</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=500&auto=format&fit=crop&q=80" alt="Look Red Carpet">
-          <div class="overlay"><span>Tema: Red Carpet Glam</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=500&auto=format&fit=crop&q=80" alt="Look Y2K">
-          <div class="overlay"><span>Tema: Y2K Icon</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1509631179647-0177331693ae?w=500&auto=format&fit=crop&q=80" alt="Look Cyber Fairy">
-          <div class="overlay"><span>Tema: Cyber Fairy</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=500&auto=format&fit=crop&q=80" alt="Look Pastel Chic">
-          <div class="overlay"><span>Tema: Pastel Chic</span></div>
-        </div>
-        <div class="gallery-item">
-          <img src="https://images.unsplash.com/photo-1485230895905-ec40ba36b9bc?w=500&auto=format&fit=crop&q=80" alt="Look Royal Gala">
-          <div class="overlay"><span>Tema: Royal Gala</span></div>
-        </div>
+    <section id="temas" class="card">
+      <h2>🎀 Combinações para Temas Famosos</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Tema</th>
+              <th>Estilo Recomendado</th>
+              <th>Acessório Chave</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Festa do Pijama</td>
+              <td>Pijama fofinho de bichinho ou conjuntos de seda pastel</td>
+              <td>Patinho de pelúcia / Meias felpudas</td>
+            </tr>
+            <tr>
+              <td>Baile de Gala</td>
+              <td>Vestido longo brilhante, coque elegante ou ondas soltas</td>
+              <td>Tiara de diamantes / Colar reluzente</td>
+            </tr>
+            <tr>
+              <td>Escola / Estudante</td>
+              <td>Saia pregueada, moletom oversized ou uniforme college</td>
+              <td>Mochila fofa / Óculos redondos</td>
+            </tr>
+            <tr>
+              <td>Gótico / E-Girl</td>
+              <td>Roupas pretas, meia-calça arrastão e botas pesadas</td>
+              <td>Gargantilha de coração / Correntes</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>Criado com ♡ para todas as fashionistas do Roblox!</p>
+  </footer>
 
 </body>
 </html>
