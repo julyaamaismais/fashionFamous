@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dress to Impress - Guia Interativo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <h1 class="sparkle-title">✨ Dress to Impress ✨</h1>
+    <p>O guia de estilo para dominar a passarela do Roblox!</p>
+  </header>
+
+  <main class="container">
+    <section class="card-info">
+      <h2 class="section-title">💖 Como Funciona o Jogo</h2>
+      <p>Em <strong>Dress to Impress</strong> (Vista-se para Impressionar), você tem tempo limitado para escolher roupas, maquiagem, cabelos e acessórios de acordo com o tema da rodada. Depois, desfile na passarela e receba estrelas dos outros jogadores!</p>
+    </section>
+
+    <section class="card-info">
+      <h2 class="section-title">🌟 Dicas de Estilo Interativas</h2>
+      <p class="subtitle">Clique nos cartões abaixo para revelar os segredos do look perfeito:</p>
+      
+      <div class="grid">
+        <div class="interactive-card" onclick="revelarDica(this)">
+          <h3>👚 Camadas (Layering)</h3>
+          <p class="hidden-text">Sobreponha vestidos com saias, tops e jaquetas para criar peças totalmente novas e detalhadas.</p>
+          <span class="click-prompt">Clique para revelar ✨</span>
+        </div>
+
+        <div class="interactive-card" onclick="revelarDica(this)">
+          <h3>🎨 Paleta de Cores</h3>
+          <p class="hidden-text">Trabalhe com 2 ou 3 cores principais ou crie combinações tom sobre tom para um visual limpo e elegante.</p>
+          <span class="click-prompt">Clique para revelar ✨</span>
+        </div>
+
+        <div class="interactive-card" onclick="revelarDica(this)">
+          <h3>💄 Cabelo e Make</h3>
+          <p class="hidden-text">Combine o tom de maquiagem e a textura do cabelo com a proposta da rodada para ganhar mais pontos nas votações.</p>
+          <span class="click-prompt">Clique para revelar ✨</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="card-info">
+      <h2 class="section-title">📸 Inspirações da Passarela</h2>
+      <p class="subtitle">Passe o mouse ou toque nas imagens para ver o efeito de iluminação:</p>
+
+      <div class="gallery">
+        <div class="img-box">
+          <img src="https://via.placeholder.com/280x380/ffb6c1/ffffff?text=Look+Coquette" alt="Look Coquette" class="game-img">
+          <p class="img-label">Tema: Coquette / Vintage</p>
+        </div>
+        <div class="img-box">
+          <img src="https://via.placeholder.com/280x380/ff69b4/ffffff?text=Look+Gala" alt="Look Gala" class="game-img">
+          <p class="img-label">Tema: Red Carpet / Gala</p>
+        </div>
+        <div class="img-box">
+          <img src="https://via.placeholder.com/280x380/ff1493/ffffff?text=Look+Cyberpunk" alt="Look Cyberpunk" class="game-img">
+          <p class="img-label">Tema: Cyberpunk / Futurist</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    function revelarDica(card) {
+      card.classList.toggle('active');
+    }
+  </script>
+
+</body>
+</html>
